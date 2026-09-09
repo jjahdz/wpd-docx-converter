@@ -1,0 +1,210 @@
+2026-03-13 11:54:18,809 [INFO] ============================================================
+2026-03-13 11:54:18,810 [INFO] Starting WPD -> DOCX Network Converter
+2026-03-13 11:54:18,811 [INFO] Watching: \\Win-em2un8j7eiv\i\WPD_INBOX
+2026-03-13 11:54:18,812 [INFO] Backups: \\Win-em2un8j7eiv\i\WPD_FORMATTED\backup
+2026-03-13 11:54:18,813 [INFO] Converted: \\Win-em2un8j7eiv\i\WPD_FORMATTED\converted
+2026-03-13 11:54:18,813 [INFO] Processes files of ANY age
+2026-03-13 11:54:18,814 [INFO] ============================================================
+2026-03-13 11:55:50,829 [INFO] Shutting down watcher...
+2026-03-13 11:56:14,482 [INFO] ============================================================
+2026-03-13 11:56:14,484 [INFO] Starting WPD -> DOCX Network Converter
+2026-03-13 11:56:14,484 [INFO] Watching: \\Win-em2un8j7eiv\i\WPD_INBOX
+2026-03-13 11:56:14,485 [INFO] Backups: \\Win-em2un8j7eiv\i\WPD_FORMATTED\backup
+2026-03-13 11:56:14,486 [INFO] Converted: \\Win-em2un8j7eiv\i\WPD_FORMATTED\converted
+2026-03-13 11:56:14,487 [INFO] Processes files of ANY age
+2026-03-13 11:56:14,488 [INFO] ============================================================
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 185, in main
+    time.sleep(1)
+    ~~~~~~~~~~^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Users\administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 22] Invalid argument
+Call stack:
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 193, in <module>
+    main()
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 187, in main
+    logging.info("Shutting down watcher...")
+Message: 'Shutting down watcher...'
+Arguments: ()
+2026-03-24 12:06:57,390 [INFO] Shutting down watcher...
+Exception ignored while finalizing file <_io.TextIOWrapper name='\\\\Win-em2un8j7eiv\\i\\WPD_FORMATTED\\converter.log' mode='a' encoding='cp1252'>:
+OSError: [Errno 22] Invalid argument
+2026-03-24 12:07:35,260 [INFO] ============================================================
+2026-03-24 12:07:35,262 [INFO] Starting WPD -> DOCX Network Converter
+2026-03-24 12:07:35,262 [INFO] Watching: \\Win-em2un8j7eiv\i\WPD_INBOX
+2026-03-24 12:07:35,264 [INFO] Backups: \\Win-em2un8j7eiv\i\WPD_FORMATTED\backup
+2026-03-24 12:07:35,265 [INFO] Converted: \\Win-em2un8j7eiv\i\WPD_FORMATTED\converted
+2026-03-24 12:07:35,269 [INFO] Processes files of ANY age
+2026-03-24 12:07:35,272 [INFO] ============================================================
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 185, in main
+    time.sleep(1)
+    ~~~~~~~~~~^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Users\administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 22] Invalid argument
+Call stack:
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 193, in <module>
+    main()
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 187, in main
+    logging.info("Shutting down watcher...")
+Message: 'Shutting down watcher...'
+Arguments: ()
+2026-04-28 18:02:05,087 [INFO] Shutting down watcher...
+Exception ignored while finalizing file <_io.TextIOWrapper name='\\\\Win-em2un8j7eiv\\i\\WPD_FORMATTED\\converter.log' mode='a' encoding='cp1252'>:
+OSError: [Errno 22] Invalid argument
+2026-04-28 18:09:39,256 [INFO] ============================================================
+2026-04-28 18:09:39,262 [INFO] Starting WPD -> DOCX Network Converter
+2026-04-28 18:09:39,266 [INFO] Watching: \\Win-em2un8j7eiv\i\WPD_INBOX
+2026-04-28 18:09:39,266 [INFO] Backups: \\Win-em2un8j7eiv\i\WPD_FORMATTED\backup
+2026-04-28 18:09:39,267 [INFO] Converted: \\Win-em2un8j7eiv\i\WPD_FORMATTED\converted
+2026-04-28 18:09:39,268 [INFO] Processes files of ANY age
+2026-04-28 18:09:39,270 [INFO] ============================================================
+2026-04-28 18:13:13,154 [INFO] Shutting down watcher...
+2026-04-28 18:20:17,990 [INFO] ============================================================
+2026-04-28 18:20:17,992 [INFO] Starting WPD -> DOCX Network Converter
+2026-04-28 18:20:17,993 [INFO] Watching: \\Win-em2un8j7eiv\i\WPD_INBOX
+2026-04-28 18:20:17,994 [INFO] Backups: \\Win-em2un8j7eiv\i\WPD_FORMATTED\backup
+2026-04-28 18:20:17,994 [INFO] Converted: \\Win-em2un8j7eiv\i\WPD_FORMATTED\converted
+2026-04-28 18:20:17,995 [INFO] Processes files of ANY age
+2026-04-28 18:20:17,996 [INFO] ============================================================
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 185, in main
+    time.sleep(1)
+    ~~~~~~~~~~^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Users\administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 22] Invalid argument
+Call stack:
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 193, in <module>
+    main()
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 187, in main
+    logging.info("Shutting down watcher...")
+Message: 'Shutting down watcher...'
+Arguments: ()
+2026-05-04 15:39:46,887 [INFO] Shutting down watcher...
+Exception ignored while finalizing file <_io.TextIOWrapper name='\\\\Win-em2un8j7eiv\\i\\WPD_FORMATTED\\converter.log' mode='a' encoding='cp1252'>:
+OSError: [Errno 22] Invalid argument
+2026-05-04 15:39:49,776 [INFO] ============================================================
+2026-05-04 15:39:49,777 [INFO] Starting WPD -> DOCX Network Converter
+2026-05-04 15:39:49,777 [INFO] Watching: \\Win-em2un8j7eiv\i\WPD_INBOX
+2026-05-04 15:39:49,778 [INFO] Backups: \\Win-em2un8j7eiv\i\WPD_FORMATTED\backup
+2026-05-04 15:39:49,778 [INFO] Converted: \\Win-em2un8j7eiv\i\WPD_FORMATTED\converted
+2026-05-04 15:39:49,779 [INFO] Processes files of ANY age
+2026-05-04 15:39:49,779 [INFO] ============================================================
+2026-05-04 15:40:11,686 [INFO] Detected file: \\Win-em2un8j7eiv\i\WPD_INBOX\fnt_sample_file (3).wpd
+2026-05-04 15:40:13,302 [INFO] Backed up: \\Win-em2un8j7eiv\i\WPD_INBOX\fnt_sample_file (3).wpd -> \\Win-em2un8j7eiv\i\WPD_FORMATTED\backup\2026-05-04_15-40-13_fnt_sample_file (3).wpd
+2026-05-04 15:40:14,924 [INFO] Converted: \\Win-em2un8j7eiv\i\WPD_INBOX\fnt_sample_file (3).wpd -> \\Win-em2un8j7eiv\i\WPD_FORMATTED\converted\fnt_sample_file (3).docx
+2026-05-04 15:44:08,506 [INFO] Detected file: \\Win-em2un8j7eiv\i\WPD_INBOX\Case Summary1.wpd
+2026-05-04 15:44:10,488 [INFO] Backed up: \\Win-em2un8j7eiv\i\WPD_INBOX\Case Summary1.wpd -> \\Win-em2un8j7eiv\i\WPD_FORMATTED\backup\2026-05-04_15-44-10_Case Summary1.wpd
+2026-05-04 15:44:27,465 [INFO] Converted: \\Win-em2un8j7eiv\i\WPD_INBOX\Case Summary1.wpd -> \\Win-em2un8j7eiv\i\WPD_FORMATTED\converted\Case Summary1.docx
+2026-05-04 15:55:35,410 [INFO] Detected file: \\Win-em2un8j7eiv\i\WPD_INBOX\fnt_sample_file.wpd
+2026-05-04 15:55:37,016 [INFO] Backed up: \\Win-em2un8j7eiv\i\WPD_INBOX\fnt_sample_file.wpd -> \\Win-em2un8j7eiv\i\WPD_FORMATTED\backup\2026-05-04_15-55-36_fnt_sample_file.wpd
+2026-05-04 15:55:38,297 [INFO] Converted: \\Win-em2un8j7eiv\i\WPD_INBOX\fnt_sample_file.wpd -> \\Win-em2un8j7eiv\i\WPD_FORMATTED\converted\fnt_sample_file.docx
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 185, in main
+    time.sleep(1)
+    ~~~~~~~~~~^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Users\administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 22] Invalid argument
+Call stack:
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 193, in <module>
+    main()
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 187, in main
+    logging.info("Shutting down watcher...")
+Message: 'Shutting down watcher...'
+Arguments: ()
+2026-05-06 10:28:21,590 [INFO] Shutting down watcher...
+Exception ignored while finalizing file <_io.TextIOWrapper name='\\\\Win-em2un8j7eiv\\i\\WPD_FORMATTED\\converter.log' mode='a' encoding='cp1252'>:
+OSError: [Errno 22] Invalid argument
+2026-05-06 10:28:52,005 [INFO] ============================================================
+2026-05-06 10:28:52,008 [INFO] Starting WPD -> DOCX Network Converter
+2026-05-06 10:28:52,012 [INFO] Watching: \\Win-em2un8j7eiv\i\WPD_INBOX
+2026-05-06 10:28:52,018 [INFO] Backups: \\Win-em2un8j7eiv\i\WPD_FORMATTED\backup
+2026-05-06 10:28:52,020 [INFO] Converted: \\Win-em2un8j7eiv\i\WPD_FORMATTED\converted
+2026-05-06 10:28:52,022 [INFO] Processes files of ANY age
+2026-05-06 10:28:52,023 [INFO] ============================================================
+2026-05-06 15:14:10,012 [INFO] Shutting down watcher...
+2026-05-06 15:14:38,443 [INFO] ============================================================
+2026-05-06 15:14:38,445 [INFO] Starting WPD -> DOCX Network Converter
+2026-05-06 15:14:38,447 [INFO] Watching: \\Win-em2un8j7eiv\i\WPD_INBOX
+2026-05-06 15:14:38,451 [INFO] Backups: \\Win-em2un8j7eiv\i\WPD_FORMATTED\backup
+2026-05-06 15:14:38,460 [INFO] Converted: \\Win-em2un8j7eiv\i\WPD_FORMATTED\converted
+2026-05-06 15:14:38,463 [INFO] Processes files of ANY age
+2026-05-06 15:14:38,467 [INFO] ============================================================
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 185, in main
+    time.sleep(1)
+    ~~~~~~~~~~^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1155, in emit
+    self.flush()
+    ~~~~~~~~~~^^
+  File "C:\Users\administrator\AppData\Local\Python\pythoncore-3.14-64\Lib\logging\__init__.py", line 1137, in flush
+    self.stream.flush()
+    ~~~~~~~~~~~~~~~~~^^
+OSError: [Errno 22] Invalid argument
+Call stack:
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 193, in <module>
+    main()
+  File "C:\Users\administrator\Music\Workspace\wpdconverter\servwpdtodocx.py", line 187, in main
+    logging.info("Shutting down watcher...")
+Message: 'Shutting down watcher...'
+Arguments: ()
+2026-05-11 12:41:10,074 [INFO] Shutting down watcher...
+Exception ignored while finalizing file <_io.TextIOWrapper name='\\\\Win-em2un8j7eiv\\i\\WPD_FORMATTED\\converter.log' mode='a' encoding='cp1252'>:
+OSError: [Errno 22] Invalid argument
+2026-05-11 12:41:43,193 [INFO] ============================================================
+2026-05-11 12:41:43,195 [INFO] Starting WPD -> DOCX Network Converter
+2026-05-11 12:41:43,196 [INFO] Watching: \\Win-em2un8j7eiv\i\WPD_INBOX
+2026-05-11 12:41:43,197 [INFO] Backups: \\Win-em2un8j7eiv\i\WPD_FORMATTED\backup
+2026-05-11 12:41:43,198 [INFO] Converted: \\Win-em2un8j7eiv\i\WPD_FORMATTED\converted
+2026-05-11 12:41:43,198 [INFO] Processes files of ANY age
+2026-05-11 12:41:43,199 [INFO] ============================================================
