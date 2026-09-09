@@ -34,3 +34,11 @@ Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\SystemFileAssociations\.wpd\shell\ConvertToDOCX\command]
 @="\"C:\\Program Files\\WPDConverter\\convert_wpd.bat\" \"%1\""
+
+; --- ODT file support ---
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.odt\shell\ConvertToDOCX]
+@="Convert to DOCX"
+"Icon"="C:\\Program Files\\LibreOffice\\program\\soffice.exe,0"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.odt\shell\ConvertToDOCX\command]
+@="\"C:\\Program Files\\WPDConverter\\convert_wpd.bat\" \"%1\""

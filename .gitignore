@@ -2,6 +2,7 @@ __pycache__/
 *.pyc
 *.msi
 *.msix
+*.zip
 nssm-*/
 wpdconverter/
 wpdconverter_retired_*/
