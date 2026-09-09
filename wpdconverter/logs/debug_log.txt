@@ -1,0 +1,1 @@
+C:\\Users\\juanf\\miniconda3\\pythonw.exe: can't open file 'C:\\wpd\\wpdconverter\\pythonw': [Errno 2] No such file or directory

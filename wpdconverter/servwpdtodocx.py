@@ -23,7 +23,9 @@ BASE_DIR = r"\\Win-em2un8j7eiv\i\WPD_FORMATTED"         #<----OLD PATHS
 #BASE_DIR = r"\\192.168.160.10\i\WPD_FORMATTED"         #<----NEW PATHS
 BACKUP_FOLDER = os.path.join(BASE_DIR, "backup")
 CONVERTED_FOLDER = os.path.join(BASE_DIR, "converted")
-LOG_FILE = os.path.join(BASE_DIR, "converter.log")
+LOGS_DIR = os.path.join(BASE_DIR, "logs")
+os.makedirs(LOGS_DIR, exist_ok=True)
+LOG_FILE = os.path.join(LOGS_DIR, "converter.log")
 
 # Path to LibreOffice executable
 LIBREOFFICE_PATH = r"C:\Program Files\LibreOffice\program\soffice.exe"

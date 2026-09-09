@@ -23,7 +23,9 @@ WATCH_FOLDERS = [
 BASE_DIR = os.path.join(HOME, "WPD_Converter")        # default base for backups & converted files
 BACKUP_FOLDER = os.path.join(BASE_DIR, "backup")
 CONVERTED_FOLDER = os.path.join(BASE_DIR, "converted")
-LOG_FILE = os.path.join(BASE_DIR, "converter.log")
+LOGS_DIR = os.path.join(BASE_DIR, "logs")
+os.makedirs(LOGS_DIR, exist_ok=True)
+LOG_FILE = os.path.join(LOGS_DIR, "converter.log")
 
 # Path to LibreOffice executable (adjust if needed).
 # Windows example: r"C:\Program Files\LibreOffice\program\soffice.exe"
