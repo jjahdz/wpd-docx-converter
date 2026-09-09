@@ -3,3 +3,5 @@ __pycache__/
 *.msi
 *.msix
 nssm-*/
+wpdconverter/
+wpdconverter_retired_*/
