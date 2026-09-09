@@ -21,7 +21,7 @@ set "LIBRE_MSI=%SCRIPT_DIR%LibreOffice_25.8.2_Win_x86-64.msi"
 set "PYTHON_ZIP=%SCRIPT_DIR%python-3.14.7-embed-amd64.zip"
 
 echo ============================================================
-echo   WPD Converter - Deployment
+echo   DOCX Converter - Deployment  (WPD + ODT)
 echo ============================================================
 echo.
 
@@ -135,7 +135,8 @@ if %ERRORLEVEL% neq 0 (
 echo.
 if "!SANE!"=="1" (
     echo ============================================================
-    echo   Deployment complete. Right-click any .wpd file to convert.
+    echo   Deployment complete. Right-click any .wpd or .odt file
+    echo   and choose "Convert to DOCX".
     echo ============================================================
 ) else (
     echo ============================================================

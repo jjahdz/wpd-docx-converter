@@ -1,17 +1,17 @@
-# WPD Converter — Setup & Deployment Guide
+# DOCX Converter — Setup & Deployment Guide
 
 ## Overview
 
-Converts WordPerfect (`.wpd`) files to `.docx` via a right-click context menu using LibreOffice headless. One-click conversion with toast notifications.
+Converts WordPerfect (`.wpd`) and OpenDocument (`.odt`) files to `.docx` via a right-click context menu using LibreOffice headless. One-click conversion with toast notifications.
 
 ---
 
 ## Prerequisites (bundled in repo)
 
-- **Python 3.x** — `python-manager-25.0.msix`
+- **Python 3.x** — `python-3.14.7-embed-amd64.zip` (portable, no install needed)
 - **LibreOffice** — `LibreOffice_25.8.2_Win_x86-64.msi`
 
-Both are installed automatically by `deploy.bat` if not already present.
+Both are set up automatically by `deploy.bat`.
 
 ---
 
@@ -50,23 +50,33 @@ Invoke-Command -ComputerName PC1,PC2,PC3 -ScriptBlock {
 
 | Step | Action |
 |------|--------|
-| 1 | Checks for Python; installs from bundled `.msix` if missing |
-| 2 | Checks for LibreOffice; installs from bundled `.msi` if missing |
-| 3 | Copies `convert_wpd.py` and `convert_wpd.bat` to `C:\Program Files\WPDConverter\` |
-| 4 | Imports `convert_wpd_context_menu.reg` (adds right-click menu entry) |
-| 5 | Runs a 3-point sanity check (script runs, LibreOffice exists, registry key present) |
+| 1 | Checks for LibreOffice; installs from bundled `.msi` if missing |
+| 2 | Extracts portable Python; copies converter files to `C:\Program Files\WPDConverter\` |
+| 3 | Imports `convert_wpd_context_menu.reg` (adds right-click menu for `.wpd` and `.odt`) |
+| 4 | Runs a sanity check (script runs, LibreOffice exists, registry key present) |
 
 ---
 
 ## Using the Converter
 
-1. Right-click any `.wpd` file.
+1. Right-click any `.wpd` or `.odt` file.
 2. Click **"Show more options"** (Windows 11 only — not needed on Windows 10).
 3. Click **"Convert to DOCX"**.
 4. A toast notification confirms success or reports an error.
 5. The `.docx` appears in the same folder as the original.
 
 If a `.docx` with the same name already exists, the output is automatically timestamped (e.g. `document_2026-09-09_114530.docx`).
+
+---
+
+## Supported File Types
+
+| Extension | Format | Notes |
+|-----------|--------|-------|
+| `.wpd` | WordPerfect | Legacy word processor format |
+| `.odt` | OpenDocument Text | LibreOffice / OpenOffice native format |
+
+Both are converted to `.docx` (Microsoft Word) format.
 
 ---
 
@@ -89,7 +99,7 @@ Nothing is deleted — everything is renamed for safe archival.
 
 ## Verifying a Deployment
 
-Run with a test `.wpd` file:
+Run with a test file:
 ```
 test_checklist.bat "C:\path\to\test.wpd"
 ```
@@ -114,9 +124,9 @@ test_checklist.bat "C:\path\to\test.wpd"
 
 | File | Purpose |
 |------|---------|
-| `convert_wpd.py` | Core converter script (Python) |
+| `convert_wpd.py` | Core converter script (`.wpd` and `.odt` to `.docx`) |
 | `convert_wpd.bat` | Wrapper with toast notifications |
-| `convert_wpd_context_menu.reg` | Right-click context menu registry entries |
+| `convert_wpd_context_menu.reg` | Right-click context menu for `.wpd` and `.odt` files |
 | `deploy.bat` | One-shot workstation deployment |
 | `retire_nssm.bat` | Retire old NSSM watcher service |
 | `test_checklist.bat` | Post-deployment verification |
@@ -133,12 +143,12 @@ test_checklist.bat "C:\path\to\test.wpd"
 - Check that LibreOffice is installed: `"C:\Program Files\LibreOffice\program\soffice.exe"` should exist.
 - Run the converter manually to see errors:
   ```
-  python "C:\Program Files\WPDConverter\convert_wpd.py" "C:\path\to\file.wpd"
+  "C:\Program Files\WPDConverter\python\python.exe" "C:\Program Files\WPDConverter\convert_wpd.py" "C:\path\to\file.wpd"
   ```
 
 **Toast notification doesn't appear**
 - Check Windows notification settings: Settings → System → Notifications.
-- Ensure "WPD Converter" is not in the blocked list.
+- Ensure "DOCX Converter" is not in the blocked list.
 
 **NSSM service keeps restarting**
 - Run `retire_nssm.bat` as Administrator.
