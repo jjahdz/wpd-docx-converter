@@ -1,17 +1,36 @@
 Windows Registry Editor Version 5.00
 
 ; Adds "Convert to DOCX" to the right-click menu for .wpd files.
-; Points to the converter script installed at C:\Program Files\WPDConverter\convert_wpd.py
+; Registers under both WPDFile and WP21Doc (Corel WordPerfect) ProgIDs
+; so the entry appears regardless of which program owns the file type.
 
+; --- File type association ---
 [HKEY_CLASSES_ROOT\.wpd]
 @="WPDFile"
 
 [HKEY_CLASSES_ROOT\WPDFile]
 @="WordPerfect Document"
 
+; --- WPDFile context menu ---
 [HKEY_CLASSES_ROOT\WPDFile\shell\ConvertToDOCX]
 @="Convert to DOCX"
 "Icon"="C:\\Program Files\\LibreOffice\\program\\soffice.exe,0"
 
 [HKEY_CLASSES_ROOT\WPDFile\shell\ConvertToDOCX\command]
+@="\"C:\\Program Files\\WPDConverter\\convert_wpd.bat\" \"%1\""
+
+; --- WP21Doc (Corel WordPerfect) context menu ---
+[HKEY_CLASSES_ROOT\WP21Doc\shell\ConvertToDOCX]
+@="Convert to DOCX"
+"Icon"="C:\\Program Files\\LibreOffice\\program\\soffice.exe,0"
+
+[HKEY_CLASSES_ROOT\WP21Doc\shell\ConvertToDOCX\command]
+@="\"C:\\Program Files\\WPDConverter\\convert_wpd.bat\" \"%1\""
+
+; --- SystemFileAssociations fallback (catches all .wpd regardless of ProgID) ---
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.wpd\shell\ConvertToDOCX]
+@="Convert to DOCX"
+"Icon"="C:\\Program Files\\LibreOffice\\program\\soffice.exe,0"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.wpd\shell\ConvertToDOCX\command]
 @="\"C:\\Program Files\\WPDConverter\\convert_wpd.bat\" \"%1\""
