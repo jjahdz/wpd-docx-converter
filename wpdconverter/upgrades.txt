@@ -1,0 +1,14 @@
+Tests:
+
+1.Will it convert newly dropped docs from other folders into
+downloads/documents?
+
+2.Make it so that if the file is already in an exist folder they 
+either need to move it to a wpd scan folder or fix logic
+DO:
+
+*Getting .bat working:
+    add pyton bin to env var
+    try where python
+
+    
