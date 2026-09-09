@@ -21,12 +21,12 @@ Both are installed automatically by `deploy.bat` if not already present.
 
 1. Copy the project folder to your network share:
    ```
-   xcopy "C:\Users\administrator\Music\Workspace" "\\Win-em2un8j7eiv\i\WPDConverter_Deploy\" /E /I /Y
+   xcopy "C:\Users\administrator\Music\Workspace" "\\Win-em2un8j7eiv\i\17\WPDConverter_Deploy\" /E /I /Y
    ```
 
 2. On each workstation, open an **Administrator Command Prompt** and run:
    ```
-   "\\Win-em2un8j7eiv\i\WPDConverter_Deploy\deploy.bat"
+   "\\Win-em2un8j7eiv\i\17\WPDConverter_Deploy\deploy.bat"
    ```
 
 ### Option B: Remote deployment via PowerShell
@@ -34,7 +34,7 @@ Both are installed automatically by `deploy.bat` if not already present.
 If PowerShell remoting is enabled on the target machines:
 ```powershell
 Invoke-Command -ComputerName PC1,PC2,PC3 -ScriptBlock {
-    Start-Process cmd -ArgumentList '/c "\\Win-em2un8j7eiv\i\WPDConverter_Deploy\deploy.bat"' -Verb RunAs -Wait
+    Start-Process cmd -ArgumentList '/c "\\Win-em2un8j7eiv\i\17\WPDConverter_Deploy\deploy.bat"' -Verb RunAs -Wait
 }
 ```
 
