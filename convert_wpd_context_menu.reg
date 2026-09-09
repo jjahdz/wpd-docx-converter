@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; Adds "Convert to DOCX" to the right-click menu for .wpd files.
+; Points to the converter script installed at C:\Program Files\WPDConverter\convert_wpd.py
+
+[HKEY_CLASSES_ROOT\.wpd]
+@="WPDFile"
+
+[HKEY_CLASSES_ROOT\WPDFile]
+@="WordPerfect Document"
+
+[HKEY_CLASSES_ROOT\WPDFile\shell\ConvertToDOCX]
+@="Convert to DOCX"
+"Icon"="C:\\Program Files\\LibreOffice\\program\\soffice.exe,0"
+
+[HKEY_CLASSES_ROOT\WPDFile\shell\ConvertToDOCX\command]
+@="\"C:\\Program Files\\WPDConverter\\convert_wpd.bat\" \"%1\""
