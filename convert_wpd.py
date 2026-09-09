@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """
-Convert a .wpd file to .docx using LibreOffice headless.
+Convert a .wpd or .odt file to .docx using LibreOffice headless.
 
 Usage:
     python convert_wpd.py "C:\\path\\to\\file.wpd"
+    python convert_wpd.py "C:\\path\\to\\file.odt"
 
 The .docx is placed next to the original. If a .docx with the same name
 already exists, the output is timestamped (e.g. document_2026-09-09_114530.docx).
@@ -52,8 +53,9 @@ def convert(wpd_path):
         print(f"File not found: {wpd_path}", file=sys.stderr)
         return 1
 
-    if not wpd_path.lower().endswith(".wpd"):
-        print(f"Not a .wpd file: {wpd_path}", file=sys.stderr)
+    SUPPORTED = (".wpd", ".odt")
+    if not any(wpd_path.lower().endswith(ext) for ext in SUPPORTED):
+        print(f"Unsupported file type: {wpd_path}", file=sys.stderr)
         return 1
 
     soffice = find_libreoffice()
